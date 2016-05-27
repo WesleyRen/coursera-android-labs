@@ -1,0 +1,2 @@
+include ':lab3b_PermissionsLab'
+include ':lab3b_PermissionsLabTest'

@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytLinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"
+        android:text="Match the following questions with their answers." />
+
+    <GridLayout
+        android:id="@+id/lytGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:columnWidth="300dp"
+        android:orientation="vertical"
+        android:rowCount="5"
+        android:stretchMode="columnWidth" >
+
+        <LinearLayout
+            android:id="@+id/Q1Lyt"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:background="@drawable/shape_qn"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/Q1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="Question1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/A1Lyt"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:text="Answer1" >
+
+            <TextView
+                android:id="@+id/A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="Answer1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Q2Lyt"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:background="@drawable/shape_qn"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/Q2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Question2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/A2Lyt"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:background="@drawable/shape"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/A2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="Answer2" />
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,2 @@
+include ':lab3a_IntentsLab'
+include ':lab3a_IntentsLabTest'
